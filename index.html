@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda Josué & Diana</title>
+    <title>Boda Carla & Guillermo</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@200;400;600&family=Tenor+Sans&family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&display=swap"
@@ -2147,42 +2147,10 @@
         </audio>
 
     </div>
-    <div class="escena-invitacion">
-        <div class="sobre-container">
-
-            <img src="sobre.png" class="sobre-img" alt="Sobre">
-            <img src="sello.png" class="sello-lacre" alt="Sello">
-
-            <div class="tarjeta-blanca" >
-
-                <p class="lema">
-                    "Hemos decidido elegirnos todos los días, en<br>
-                    lo simple y en lo extraordinario."
-                </p>
-
-                <h2 class="nombre-tarjeta">
-                    CARLA
-                </h2>
-
-                <div class="ampersand-tarjeta">&</div>
-
-                <h2 class="nombre-tarjeta">
-                    GUILLERMO
-                </h2>
-
-                <p class="honor">
-                    Te invitamos a celebrar con nosotros el día<br>
-                    de nuestra boda.
-                </p>
-
-                
-
-            </div>
-        </div>
-    </div>
-<br>
-<br>
-<br>
+   <section class="foto-inicio">
+        <img src="fod.png" alt="Joe y Elisa" class="foto-entrada-celular">
+    </section>
+   
 
 <!-- CEREMONIA -->
 <div class="tarjeta-ubicacion">
@@ -2197,7 +2165,7 @@
         <p>Calle Ejemplo #123</p>
     </div>
 
-    <a href="https://wa.me/593960934663?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20Ceremonia."
+    <a href="https://maps.app.goo.gl/ypDnbWdw5oN9HxZE6"
        target="_blank"
        class="btn-ubicacion">
         VER UBICACIÓN
@@ -2219,7 +2187,7 @@
         <p>Av. Principal #456</p>
     </div>
 
-    <a href="https://wa.me/593960934663?text=¡Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20Recepción."
+    <a href="https://maps.app.goo.gl/ypDnbWdw5oN9HxZE6"
        target="_blank"
        class="btn-ubicacion">
         VER UBICACIÓN
@@ -2338,7 +2306,12 @@
  <!-- ============================= -->
 <!-- SECCIÓN DRESS CODE -->
 <!-- ============================= -->
-
+<section class="foto-inicio" style="width: 100%; display: flex; justify-content: center; overflow: hidden;">
+    <img src="padres.png" 
+         alt="Joe y Elisa" 
+         class="foto-entrada-celular"
+         style="width: 75%; max-width: 320px; height: auto; display: block;">
+</section>
 <section class="seccion-especial">
 
     <div class="tarjeta-especial">
@@ -2442,13 +2415,41 @@
 
 </section>
 
-  <section class="foto-destacada-contenedor">
+<section class="foto-destacada-contenedor" style="max-width: 300px; width: 100%; margin: 0 auto; text-align: center;">
     <img 
         src="Gemini_Generated_Image_lnstcklnstcklnst__1_-removebg-preview.png" 
         alt="Joe y Elisa" 
         class="foto-destacada-img"
+        style="width: 100%; height: auto; display: block;"
     >
 </section>
+<div class="tarjeta-ubicacion">
+
+    <img src="ceremonia.png" alt="Participa" class="icono-ubicacion">
+
+    <h3 class="titulo-ubicacion">COMPARTE CON NOSOTROS</h3>
+
+    <div class="info-ubicacion">
+        <p>Ayúdanos a guardar los mejores momentos de este día.</p>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:12px; align-items:center; margin-top:25px;">
+
+        <a href="#" 
+           class="btn-ubicacion"
+           style="width:80%; text-align:center;">
+            📸 SUBIR FOTOS
+        </a>
+
+        <a href="#" 
+           class="btn-ubicacion"
+           style="width:80%; text-align:center;">
+            🎵 SUGERIR MÚSICA
+        </a>
+
+    </div>
+
+</div>
  <div class="capsula-tiempo" style="background-image: url('si.png');">
         <h3 class="preparate">¡PRONTO!</h3>
         <p class="nos-vemos">NOS VEMOS DENTRO DE</p>
@@ -2472,6 +2473,12 @@
                 <div class="timer-item">
                     <span id="minutes">45</span>
                     <div class="timer-label">MINUTOS</div>
+                </div>
+                  <span class="colon">:</span>
+
+                <div class="timer-item">
+                    <span id="seconds">45</span>
+                    <div class="timer-label">SEGUNDOS</div>
                 </div>
 
               
@@ -2512,6 +2519,159 @@
         }
         .tarjeta-especial {
     margin: 0 auto;
+}
+@media (max-width: 480px) {
+
+    /* =====================================
+       CONTADOR - QUE TODO QUEDE DENTRO DEL ARCO
+       ===================================== */
+
+    .capsula-tiempo {
+        width: 90% !important;
+        max-width: 350px !important;
+        padding: 35px 15px 25px !important;
+        border-radius: 120px 120px 0 0 !important;
+    }
+
+    .preparate {
+        font-size: 1.7rem !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .nos-vemos {
+        font-size: 0.65rem !important;
+        letter-spacing: 1.5px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .timer-grid {
+        gap: 3px !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .timer-item {
+        min-width: 45px !important;
+    }
+
+    .timer-item span,
+    .colon {
+        font-size: 1.25rem !important;
+    }
+
+    .timer-label {
+        font-size: 0.42rem !important;
+        letter-spacing: 0.5px !important;
+        margin-top: 10px !important;
+    }
+
+    .colon {
+        margin-top: 1px !important;
+    }
+
+
+    /* =====================================
+       CEREMONIA / RECEPCIÓN
+       ===================================== */
+
+    .tarjeta-ubicacion {
+        width: 88% !important;
+        max-width: 350px !important;
+        min-height: 350px !important;
+        padding: 30px 20px !important;
+        margin: 25px auto !important;
+        border-radius: 30px !important;
+    }
+
+    .icono-ubicacion {
+        width: 80px !important;
+        height: 80px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .titulo-ubicacion {
+        font-size: 1.35rem !important;
+        letter-spacing: 3px !important;
+        margin: 5px 0 !important;
+    }
+
+    .titulo-ubicacion::after {
+        width: 150px !important;
+        margin: 8px auto 12px !important;
+    }
+
+    .info-ubicacion p {
+        font-size: 0.8rem !important;
+        margin: 4px 0 !important;
+    }
+
+    .info-ubicacion .hora-ubicacion {
+        font-size: 1rem !important;
+    }
+
+    .btn-ubicacion {
+        margin-top: 18px !important;
+        padding: 9px 20px !important;
+        font-size: 0.65rem !important;
+        letter-spacing: 1px !important;
+    }
+
+
+    /* =====================================
+       REGALOS / LLUVIA DE SOBRES / DRESS CODE
+       ===================================== */
+
+    .tarjeta-especial {
+        width: 88% !important;
+        max-width: 350px !important;
+        padding: 30px 20px !important;
+        border-radius: 28px !important;
+    }
+
+    .tarjeta-especial .imagen-especial {
+        width: 65px !important;
+        height: auto !important;
+        margin: 0 auto 10px !important;
+    }
+
+    .titulo-especial {
+        font-size: 1.35rem !important;
+        letter-spacing: 2px !important;
+        margin: 8px 0 !important;
+    }
+
+    .linea-especial {
+        width: 130px !important;
+        margin: 8px auto 15px !important;
+    }
+
+    .texto-especial {
+        font-size: 0.72rem !important;
+        line-height: 1.5 !important;
+        margin: 8px 0 !important;
+    }
+
+    .dato-especial {
+        font-size: 0.7rem !important;
+        line-height: 1.4 !important;
+        margin: 6px 0 !important;
+    }
+
+    .datos-bancarios {
+        width: 100% !important;
+    }
+
+
+    /* =====================================
+       BOTÓN CONFIRMAR
+       ===================================== */
+
+    .btn-confirmar {
+        font-size: 0.65rem !important;
+        padding: 10px 18px !important;
+        letter-spacing: 1px !important;
+    }
 }
     </style>
 
